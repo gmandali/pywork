@@ -1,7 +1,7 @@
+# https://www.hackerrank.com/challenges/py-set-discard-remove-pop/problem
 NumOfElementsInSet = int(input())
 MainSet = set(map(int, input().split()))
 NumOfOperations = int(input())
-
 
 for i in range(NumOfOperations):
     BigInput = input().split()
