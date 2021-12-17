@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/maximize-it/problem?h_r=internal-search
 from itertools import repeat
 from itertools import product
 
