@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/py-collections-deque/problem?isFullScreen=true
 from collections import deque
 
 i = deque()
