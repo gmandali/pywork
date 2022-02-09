@@ -6,6 +6,6 @@ for rep in range(int(input())):
     students.append(student)
     gradeSet.add(student[1])
 
-runnerUpGrade = sorted(list(gradeSet))[1]
+runnerUpGrade = sorted(gradeSet)[1]
 runnerUpNames = sorted([student[0] for student in students if student[1] == runnerUpGrade])
 print("\n".join(runnerUpNames))
