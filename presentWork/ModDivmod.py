@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/python-mod-divmod/problem?isFullScreen=true
 num1 = int(input())
 num2 = int(input())
 newNum1 = num1//num2
