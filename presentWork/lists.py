@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/python-lists/problem?isFullScreen=true
 numOftimes = int(input())
 newList = []
 for i in range(numOftimes):
@@ -7,7 +8,7 @@ for i in range(numOftimes):
     elif operations[0] == "sort":
         newList.sort()
     elif operations[0] == "append":
-        newList.insert(-1, int(operations[1]))
+        newList.append(int(operations[1]))
     elif operations[0] == "print":
         print(newList)
     elif operations[0] == "remove":
