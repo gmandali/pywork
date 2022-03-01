@@ -12,6 +12,7 @@ def popup():
     if render == "ok":
         render = "You have picked wrong door :("
         Label(root, text=render, fg="white", bg="blue").pack()
+        quit()
 
 
 # this is safe door
@@ -20,6 +21,7 @@ def safedoor():
     if render1 == 'ok':
         render1 = 'You have won this game :)'
         Label(tki, text=render1, fg="white", bg="blue").pack()
+        quit()
 
 
 button = Button(root, text='Click the correct button to win the game', command=popup, fg="white", bg="blue",pady=100,padx=20).pack()

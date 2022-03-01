@@ -1,5 +1,4 @@
 from colorama import Fore, Style
-import os
 print(Fore.LIGHTBLUE_EX, Style.BRIGHT, '''
 ░██████╗░░█████╗░██╗░░░██╗██████╗░░█████╗░██╗░░░██╗██╗░██████╗
 ██╔════╝░██╔══██╗██║░░░██║██╔══██╗██╔══██╗██║░░░██║╚█║██╔════╝
@@ -66,10 +65,6 @@ security - for a free wireless security website""")
         else:
             print("Invalid operation")
             print("Pls restart program " + user)
-    elif start == 'clear':
-        clear = lambda: os.system('cls')
-        clear()
-    elif start == 'herogame':
         print("""Your hero is in danger.
         he is surrounded by evil trolls.
         this is his last battle.""")
@@ -143,8 +138,8 @@ security - for a free wireless security website""")
 
         def myclick():
             tki = Toplevel()
-            Button(tki, text='do you want two doors', command=two).pack()
-            Button(tki, text='do you want three doors', command=three).pack()
+            Button(tki, text='do you want two doors', command=two,relief=SUNKEN).pack()
+            Button(tki, text='do you want three doors', command=three,relief=SUNKEN).pack()
 
 
         def clickbait():
@@ -225,14 +220,14 @@ security - for a free wireless security website""")
                 print("You are in.")
                 coins = 10000
                 mood = input("How are you?: ")
-                print("Wassup Baby, you are", mood)
+                print("Wassup Baby, I heard that you are", mood)
                 print("security is", security)
                 print("password and username to your account is Priya and Pink Dress")
                 command = input("Would you like to upgrade?(Yes or No): ")
                 if command == "Yes":
                     coins -= 1000
                     security += 1
-                    print("you have", coins, "coins")
+                    print("you have", coins, "coins and security is", security)
                 elif command == "No":
                     print(Fore.GREEN, Style.BRIGHT, "ok")
                 else:
@@ -245,6 +240,6 @@ security - for a free wireless security website""")
         break
 
     else:
-        print(Fore.RED, Style.BRIGHT, "illegal word :(")
-print(Fore.CYAN, Style.BRIGHT, "ok, Byeeeeeeee")
+        print(Fore.RED, Style.BRIGHT, "I can't find that in my item list. :(")
+print(Fore.CYAN, Style.BRIGHT, "ok, Have a good day")
 copyright()
